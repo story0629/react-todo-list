@@ -1,16 +1,21 @@
-import { useState } from 'react'
-function App() {
-  const [count, setCount] = useState(0)
+import Layout from './Layout/Layout'
+import Home from './Pages/Home'
+import Hook from './Pages/Hook'
+import Classic from './Pages/Classic'
 
+import { Routes, Route } from 'react-router-dom'
+
+
+const App = () => {
   return (
-    <>
-      <h1 className='w-100 text-center px-2 py-4 text-amber-400 bg-gray-900'>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="hook" element={<Hook/>} />
+        <Route path="classic" element={<Classic/>} />
+      </Routes>
+      <Layout/>
+    </div>
   )
 }
 
