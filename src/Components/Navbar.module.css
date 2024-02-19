@@ -1,0 +1,31 @@
+.navbar {
+    @apply w-64 min-h-screen;
+    @apply fixed top-0 right-0;
+    @apply bg-gray-900;
+    @apply flex p-4;
+    @apply transition ease-in-out duration-300;
+}
+
+.navbarClose {
+    @apply translate-x-3/4;
+}
+
+.navbarClose ul {
+    @apply hidden;
+}
+
+.navbar ul {
+    @apply w-64;
+    @apply mt-20;
+}
+
+.navbar li {
+    @apply text-white font-bold;
+    @apply mb-4;
+    @apply cursor-pointer;
+}
+
+.icon {
+    @apply absolute top-4 left-4;
+    @apply cursor-pointer;
+}
