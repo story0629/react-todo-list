@@ -21,9 +21,9 @@ const Navbar = () => {
         }
         </div>
           <ul>
-              <li>Home</li>
-              <li>React Hook</li>
-              <li>React Classic</li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/hook">React Hook</Link></li>
+              <li><Link to="/classic">React Classic</Link></li>
           </ul>
       </nav>
     </>

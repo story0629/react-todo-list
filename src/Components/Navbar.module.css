@@ -23,6 +23,8 @@
     @apply text-white font-bold;
     @apply mb-4;
     @apply cursor-pointer;
+    @apply hover:text-cyan-500 hover:underline;
+    @apply transition-all ease-in-out duration-300;
 }
 
 .icon {
