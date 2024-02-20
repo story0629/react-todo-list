@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Styles from './Navbar.module.css'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleHandler = () => {
     setIsOpen(!isOpen);
