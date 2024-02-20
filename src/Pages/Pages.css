@@ -38,3 +38,7 @@ input {
     @apply w-full mb-3 pb-3 border-b-2;
     @apply flex justify-between items-center;
 }
+
+.remove {
+    @apply cursor-pointer;
+}
